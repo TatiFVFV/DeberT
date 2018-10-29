@@ -1,0 +1,253 @@
+    * {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {overflow: auto;}
+
+/* Style cabecera */
+.cabecera {
+    text-align: center;
+    font-size: 12px;
+    padding: 14px 12px;
+}
+
+#main {margin-left: 4px;}
+
+#leftsidebar {
+   /* float: none;
+    width: auto;*/
+    width: 200px; float: left;
+}
+
+#menulist {
+    margin: 0;
+    padding: 0;
+}
+
+.menuitem {
+    border-radius: 4px;
+    list-style-type: none;
+    padding: 20px;
+
+}
+
+
+/*Esto funciona para que cuando la pantalla sea menor a 480 el menú se vaya a la parte superior
+@media screen and (min-width: 480px) {
+    #leftsidebar {width: 200px; float: left;}
+    #main {margin-left: 216px;}
+    .menuitem { padding: 2px;}
+}*/
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+   /* height: 500px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.side {
+    width: 30%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 40%;
+}
+/* Tercera columna */
+.column.tercera {
+    width: 30%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the side navigation */
+.menuLateral {
+    float: none;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    /*top: 10px;*/
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+}
+
+
+
+/* Side navigation links */
+.menuLateral a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.menuLateral a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+/* Style the content */
+.contenido {
+    margin-left: 200px;
+    padding-left: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    .menuLateral {
+        width: 150px;
+        margin: 6px 0;
+        font-size: 12px;
+    }
+    .contenido{
+        margin-left: 150px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .menuLateral {
+        width: 120px;
+        margin: 6px 0;
+        font-size: 10px;
+    }
+    .contenido{
+        margin-left: 120px;
+    }
+}
+
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    height: 30%;
+  }
+  
+  .textimagen {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 32.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+    font-size: 18px;
+}
+
+div.gallery1 img {
+    width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+.responsive1 {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive1 {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    div.gallery1 img {
+         display: none;
+        }       
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
